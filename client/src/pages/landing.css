@@ -1,0 +1,61 @@
+
+body {
+  margin: 0;
+  background: #000;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+.intro {
+  text-align: center;
+  padding: 40px 20px 20px;
+  animation: fadeIn 2s ease-out forwards;
+}
+.emblem {
+  width: 150px;
+  animation: pulse 4s infinite ease-in-out;
+}
+.headline {
+  font-size: 3em;
+  margin: 10px 0;
+}
+.tagline {
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+.branches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  gap: 40px;
+  max-width: 1200px;
+  padding: 10px;
+}
+.branch {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.4s;
+}
+.branch:hover {
+  transform: scale(1.05);
+}
+.branch img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+.branch h2 {
+  margin-top: 10px;
+  font-size: 1.4em;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.85; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
