@@ -1,4 +1,5 @@
 {
-  "buildCommand": "npm rebuild esbuild && npm run build",
-  "outputDirectory": "client/dist"
+  "rootDirectory": "client",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }
